@@ -1,11 +1,15 @@
 word = input()
 
+for letter in word:
+    if letter.isupper():
+        word = word.replace(letter, "_" + letter.lower())
 
-res = [str[0].lower()]
-for c in str[1:]:
-    if c in ('ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
-        res.append('_')
-        res.append(c.lower())
-    else:
-        res.append(c)
+print(word)
 
+# string = input()
+
+# for letter in string:
+#     if letter.isupper():
+#         string = string.replace(letter, "_" + letter.lower())
+#
+# print(string)
